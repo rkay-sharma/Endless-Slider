@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container xyz">
+            <div>
+                <span class="item">1</span></div>
+            <div>
+                <span>2</span></div>
+            <div>
+                <span>3</span></div>
+            <div>
+                <span>4</span></div>
+            <div>
+                <span>5</span></div>
+            <div>
+                <span>6</span></div>
+            <div>
+                <span>7</span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub-container main">
+            <div>
+                <span class="item">1</span></div>
+            <div>
+                <span>2</span></div>
+            <div>
+                <span>3</span></div>
+            <div>
+                <span>4</span></div>
+            <div>
+                <span>5</span></div>
+            <div>
+                <span>6</span></div>
+            <div>
+                <span>7</span></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub-container slide">
+            <div>
+                <span class="item">1</span></div>
+            <div>
+                <span>2</span></div>
+            <div>
+                <span>3</span></div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            slider({
+                selector: '.xyz',
+                desktopSlide: 4,
+                mobileSlide: 7,
+                tabletSlide: 3,
+                animationSpeed: 300
+            });
+        });
+        $(document).ready(function () {
+            slider({
+                selector: '.main',
+                desktopSlide: 3,
+                mobileSlide: 7,
+                tabletSlide: 3,
+                animationSpeed: 300
+            });
+        });
+        $(document).ready(function () {
+            slider({
+                selector: '.slide',
+                desktopSlide: 2,
+                mobileSlide: 7,
+                tabletSlide: 2,
+                animationSpeed: 300
+            });
+        });
+    </script>
+</body>
+</html>
